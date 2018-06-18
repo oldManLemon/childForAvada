@@ -21,7 +21,13 @@ if (!defined('ABSPATH')) {
 		<?php endif;?>
 		<!-- Add the Custom Code Here -->
 
-		<h2>Remember to search the forums, incase there is something insightful there!</h2>
+		<h2>Remember to search the forums, incase there is something! insightful there!</h2>
+		<form id="discourseSearch">
+			<input id="searchInput" value="" autofocus>
+            <label for="searchInput">Search Here</label>
+                <button class="" type="submit">Submit</button>
+
+        </form>
 
 		<!-- End the Custom Code -->
 		<?php if ('hidden' != Avada()->settings->get('search_new_search_position')): ?>
@@ -51,7 +57,16 @@ echo avada_render_post_title(0, false, esc_html__('Need a new search?', 'Avada')
 
 					<!-- Add the Custom Code Here -->
 
-		<h2>Remember nolinks to search the forums, incase there is something insightful there!</h2>
+		<h2>Remember nolinks to search the forums, incase there is !something insightful there!</h2>
+		<form id="discourseSearch">
+            <input id="searchInput" value="" autofocus>
+            <label for="searchInput">Search Here</label>
+                <button class="" type="submit">Submit</button>
+
+        </form>
+    
+  
+    <script src="../wp/wp-content/themes/Avada-Child-Theme/js/discourseSearch.js"></script>
 
 <!-- End the Custom Code -->
 				<div class="fusion-columns fusion-columns-3">
