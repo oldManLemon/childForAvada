@@ -11,6 +11,19 @@ if (!defined('ABSPATH')) {
     exit('Direct script access denied.');
 }
 ?>
+  <style>
+            .btn{
+                color: white;
+                background-color: #0d47a1;
+                text-decoration: none;
+                text-align: center;
+                outline: 0;
+                border-radius: 2px;
+                box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+                border-style: none;
+                padding: 3;
+            }
+            </style>
 <?php get_header();?>
 <section id="content" <?php Avada()->layout->add_class('content_class');?> <?php Avada()->layout->add_style('content_style');?>>
 	<?php if (have_posts() && 0 != strlen(trim(get_search_query()))): ?>
@@ -21,11 +34,11 @@ if (!defined('ABSPATH')) {
 		<?php endif;?>
 		<!-- Add the Custom Code Here -->
 
-		<h2>Remember to search the forums, incase there is something! insightful there!</h2>
+		<h2>Remember to search the forums, incase there is something insightful there!</h2>
 		<form id="discourseSearch">
-			<input id="searchInput" value="" autofocus>
-            <label for="searchInput">Search Here</label>
-                <button class="" type="submit">Submit</button>
+			<input class='s' id="searchInput" value="" autofocus>
+            <label for="searchInput">Search the Forums</label>
+                <button class="btn" type="submit">Submit</button>
 
         </form>
 
@@ -57,11 +70,11 @@ echo avada_render_post_title(0, false, esc_html__('Need a new search?', 'Avada')
 
 					<!-- Add the Custom Code Here -->
 
-		<h2>Remember nolinks to search the forums, incase there is !something insightful there!</h2>
+		<h2>Remember nolinks to search the forums, incase there is something insightful there!</h2>
 		<form id="discourseSearch">
-            <input id="searchInput" value="" autofocus>
-            <label for="searchInput">Search Here</label>
-                <button class="" type="submit">Submit</button>
+            <input class="s" id="searchInput" value="" autofocus>
+            <label for="searchInput">Search the Forums</label>
+                <button class="btn" type="submit">Submit</button>
 
         </form>
     
