@@ -40,7 +40,8 @@ if (!defined('ABSPATH')) {
             <label for="searchInput">Search the Forums</label>
                 <button class="btn" type="submit">Submit</button>
 
-        </form>
+		</form>
+		<script src='http://bwwiki:49494/wp-content/themes/Avada-Child-Theme/js/discourseSearch.js'></script>
 
 		<!-- End the Custom Code -->
 		<?php if ('hidden' != Avada()->settings->get('search_new_search_position')): ?>
@@ -79,7 +80,7 @@ echo avada_render_post_title(0, false, esc_html__('Need a new search?', 'Avada')
         </form>
     
   
-    <script src="../wp/wp-content/themes/Avada-Child-Theme/js/discourseSearch.js"></script>
+    <script src="../wp-content/themes/Avada-Child-Theme/js/discourseSearch.js"></script>
 
 <!-- End the Custom Code -->
 				<div class="fusion-columns fusion-columns-3">
